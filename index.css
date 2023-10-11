@@ -1,0 +1,236 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --background-light: #fff;
+  --background-dark: #2f1893;
+  --action-primary: #25dac5;
+  --action-secondary: #482be7;
+  --action-third: #e93a7d;
+  --colors-heading: #1e0e62;
+  --colors-grey: #ebeaed;
+  --colors-text: rgba(21, 20, 57, 0.4);
+  --social-twitter: #1da1f2;
+}
+
+body {
+  background: var(--background-dark);
+  font-family: "DM Sans", sans-serif;
+  color: white;
+  margin-bottom: 103px;
+}
+
+button {
+  border: none;
+  outline: none;
+  background: none;
+  color: inherit;
+  font-family: inherit;
+}
+
+#main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#header-menu {
+  width: 972px;
+  height: 40px;
+  margin: 65px 215px auto 213px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#heading-container {
+  display: flex;
+  padding: 0 3px 0 2px;
+  align-items: center;
+}
+
+#heading {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.293px;
+}
+
+#header-list {
+  width: 503px;
+  display: flex;
+  flex-direction: row;
+}
+
+#header-list {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  align-items: center;
+  gap: 34px;
+}
+
+#header-list > li:first-child {
+  opacity: 0.3;
+}
+
+#header-list > li > button {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+#header-list > li > #purchase {
+  width: 120px;
+  height: 40px;
+  background-color: var(--action-third);
+  border-radius: 100px;
+}
+
+#second-container {
+  width: 972px;
+  margin-top: 114px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#text-container {
+  width: 427px;
+  height: 496px;
+}
+
+#text-container > h2 {
+  width: 424px;
+  height: 217px;
+  font-size: 58px;
+  font-weight: 700;
+  line-height: 70px;
+  letter-spacing: -1px;
+}
+
+#text-container > h5 {
+  margin-top: 24px;
+  width: 363px;
+  height: 160px;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+#text-container > #learn-more {
+  margin-top: 45px;
+  width: 157px;
+  background-color: var(--action-third);
+}
+
+#form-container > button,
+#text-container > button {
+  width: 330px;
+  height: 50px;
+  border-radius: 100px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+#form-container {
+  background: var(--background-light);
+  border-radius: 10px;
+  width: 470px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#form-container > h3 {
+  color: var(--colors-heading);
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: -0.4px;
+  margin-bottom: 34px;
+}
+
+#form-container > input {
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  font-family: inherit;
+  width: 330px;
+  height: 50px;
+  border-radius: 100px;
+  border: 2px solid var(--colors-grey);
+  color: var(--colors-text);
+  opacity: 0.4;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  padding: 12px 0 12px 24px;
+}
+
+#form-container > label {
+  margin: 10px 0 30px 0;
+  width: 265px;
+  height: 26.4px;
+  color: var(--colors-text);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-self: flex-start;
+  margin-left: 70px;
+}
+
+#checkbox {
+  accent-color: var(--action-primary);
+  width: 24px;
+  height: 24px;
+}
+
+#form-container > #sign-in {
+  background: var(--action-secondary);
+}
+
+#form-container > #line-break {
+  color: var(--colors-text);
+  text-align: center;
+  font-size: 16px;
+  line-height: 26px;
+  margin: 18px 0 16px 0;
+  display: flex;
+  align-items: center;
+}
+
+#line-break::before,
+#line-break::after {
+  width: 142px;
+  content: "";
+  height: 2px;
+  background-color: var(--colors-grey);
+  margin: 16px;
+}
+
+#form-container > #login {
+  background: var(--social-twitter);
+  margin-bottom: 30px;
+}
+
+#form-container > #sign-in-link {
+  color: var(--colors-text);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+#form-container > #sign-in-link > a {
+  text-decoration: none;
+  color: var(--action-primary);
+}
